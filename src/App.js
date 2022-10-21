@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Topbar from './Component/Topbar/Topbar';
+import { Box, Image } from '@chakra-ui/react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Topbar/>
+      <Box background='#282c34'>
+        <Image src={logo}/>
+      </Box>
+    </>
+
   );
 }
 
