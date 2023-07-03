@@ -1,0 +1,139 @@
+.chatbox-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #0a7cff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+}
+.chatbox-bubble {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+}
+.chatbox-content {
+  flex: 1 1 auto;
+  height: calc(100% - 112px);
+  overflow-y: auto;
+  position: relative;
+  word-wrap: break-word;
+  padding: 0 10px;
+}
+.chatbox-input {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+  align-items: center;
+  display: flex;
+  height: 52px;
+}
+.chatbox-container {
+  padding: 0px;
+  position: fixed;
+  z-index: 100;
+  border-radius: 16px;
+  top: auto;
+  background: none;
+  width: 399px;
+  bottom: 100px;
+  max-height: calc(100% - 84px);
+  right: 30px;
+  height: 500px;
+  min-height: 300px;
+  box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  animation: thread_slide_up 200ms forwards;
+  overflow: hidden;
+}
+.chatbox-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0a7cff;
+  min-height: 60px;
+  padding: 0 12px 0 12px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+.chatbox-avatar {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+}
+.chatbox-title {
+  direction: ltr;
+  height: 36px;
+  margin-left: 12px;
+  color: #fff;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+.chatbox-close {
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatSubmitButton {
+  height: 24px;
+  width: 24px;
+  border: none;
+  margin: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatInputButton {
+  flex: 1 0 auto;
+  height: 36px;
+  line-height: 40px;
+  margin: 8px 0;
+  padding-left: 12px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.messageTop{
+    display: flex;
+    align-items: center;
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.messageText{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(245, 241, 241);
+    color: black;
+    max-width: 300px;
+}
+
+.message.own{
+    align-items: flex-end;
+}
+
+.message.own .messageText{
+    background-color: lightseagreen;
+    color: white;
+}

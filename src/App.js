@@ -1,17 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import Topbar from './Component/Topbar/Topbar';
-import { Box, Image } from '@chakra-ui/react';
+import "./App.css";
+import {
+  Route,
+  RouteProps,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Work from "./Pages/Work/Work";
 
 function App() {
   return (
-    <>
-      <Topbar/>
-      <Box background='#282c34'>
-        <Image src={logo}/>
-      </Box>
-    </>
-
+    <div className="App">
+      <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/friend" element={<Work />} />
+      </Routes>
+    </div>
   );
 }
 
